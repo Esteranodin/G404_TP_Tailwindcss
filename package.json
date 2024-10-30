@@ -6,7 +6,6 @@
   "scripts": {
     "build:css": "tailwindcss build -i ./css/style.css -o ./css/output.css --watch"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
