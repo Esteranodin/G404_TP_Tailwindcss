@@ -26,17 +26,16 @@
 </head>
 
 <body>
-  <div class="sm:container sm:mx-auto px-4 py-8 bg-neutral-off-white">
+  <div class="container mx-auto px-4 py-8 font-body bg-neutral-off-white sm:max-md:px-6 md:max-lg:px-20 md:max-lg:py-16 lg:max-xl:px-10">
     <header>
-      <nav class="pb-8">
-        <div class="flex items-center justify-between">
-          <img class="h-7" src="./assets/images/logo.svg" alt="logo de l'entreprise" />
-          <img src="./assets/images/icon-menu.svg" alt="icone menu burger" />
-          <div class="hidden">
-            <img src="./assets/images/icon-menu-close.svg" alt="croix pour fermer menu burger" />
+      <nav class="pb-7 sm:max-lg:pb-9">
+        <div class="flex items-center justify-between sm:max-lg:w-[80%] sm:max-lg:justify-self-center">
+          <img class="h-7 sm:max-lg:h-9 lg:max-xl:h-10" src="./assets/images/logo.svg" alt="logo de l'entreprise" />
+          <img class="sm:max-lg:h-6 lg:max-xl:hidden" src="./assets/images/icon-menu.svg" alt="icone menu burger" />
 
-            <ol>
-              <a href=""></a>
+          <div class="hidden lg:max-xl:flex">
+            <img class="hidden" src="./assets/images/icon-menu-close.svg" alt="croix pour fermer menu burger" />
+            <ol class="gap-7 text-neutral-dark-grayish-blue lg:max-xl:flex lg:max-xl:flex-row">
               <li><a href="">Home</a></li>
               <li><a href="">New</a></li>
               <li><a href="">Popular</a></li>
@@ -50,74 +49,116 @@
 
     <main>
       <section>
-        <div class="flex flex-col gap-4">
-          <img src="./assets/images/image-web-3-mobile.jpg" alt="Image très colorée d'un jeu de construction en bois" />
+        <div class="flex flex-col gap-5 sm:max-lg:flex sm:max-lg:items-center sm:max-lg:gap-7 lg:flex-row">
+          <img class="sm:max-lg:w-[80%] lg:w-[60%]" src="./assets/images/image-web-3-mobile.jpg" alt="Image très colorée d'un jeu de construction en bois" />
 
-          <h1 class="text-neutral-very-dark-blue font-bold text-5xl">
+          <h1 class="text-neutral-very-dark-blue font-extrabold text-4xl lg:w-[40%] flex">
             The Bright Future of Web 3.0?
           </h1>
 
-          <p class="text-neutral-dark-grayish-blue font-medium font-body text-paragraph">
+          <p class="text-neutral-dark-grayish-blue font-medium text-paragraph leading-6 md:max-lg:text-lg ">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is
             it really fulfilling its promise?
           </p>
 
-          <a class="flex bg-primary-soft-red text-neutral-off-white font-semibold h-11 w-40 text-sm items-center justify-center tracking-[.3em] px-4"
+          <a class="flex bg-primary-soft-red text-neutral-off-white font-semibold w-[55%] text-sm items-center justify-center tracking-[.3em] p-4 md:max-lg:text-lg md:max-lg:w-[45%]"
             href="#">READ MORE</a>
         </div>
       </section>
 
-      <section class="flex flex-col my-12 px-6 py-6 font-body bg-slate-900">
-        <h2 class="text-primary-soft-orange font-body font-bold text-3xl pb-4">New</h2>
-        <article class="text-neutral-off-white flex flex-col gap-5">
-          <div class="flex flex-col gap-1">
-            <h3 class="text-lg font-semibold"><a href="">Hydrogen VS Electric Cars</a></h3>
-            <p class="text-sm font-thin ">Will hydrogen-fueled cars ever catch up to EVs?</p>
-          </div>
-          <hr class="h-px" />
-          <div class="flex flex-col gap-1">
-            <h3 class="text-lg font-semibold"><a href="">The Downsides of AI Artistry</a></h3>
-            <p class="text-sm font-thin "> What are the possible adverse effects of on-demand AI image
-              generation?</p>
-          </div>
-          <hr />
-          <div class="flex flex-col gap-1">
-            <h3 class="text-lg font-semibold"><a href="">Is VC Funding Drying Up?</a></h3>
-            <p class="text-sm font-thin ">Private funding by VC firms is down 50% YOY. We take a look at what that
-              means.</p>
-          </div>
-        </article>
+      <section class="flex flex-col my-14 px-6 py-6 bg-neutral-very-dark-blue sm:max-lg:w-[90%] sm:max-lg:justify-self-center">
+        <h2 class="text-primary-soft-orange font-bold text-4xl pb-4 md:max-lg:text-5xl sm:max-lg:pb-6">New</h2>
+        <div class="text-neutral-off-white flex flex-col gap-5">
+          <a href="" class="group">
+            <article class="flex flex-col gap-1">
+              <h3 class="text-lg font-semibold group-hover:text-primary-soft-orange md:max-lg:text-xl">
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="text-sm font-medium text-neutral-grayish-blue leading-6 md:max-lg:text-lg">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+          </a>
+          <hr class="border-y-neutral-dark-grayish-blue" />
+
+          <a href="" class="group">
+            <article class="flex flex-col gap-1">
+              <h3 class="text-lg font-semibold md:max-lg:text-xl">
+                The Downsides of AI Artistry
+              </h3>
+              <p class="text-sm font-medium text-neutral-grayish-blue leading-6 md:max-lg:text-lg">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+          </a>
+
+          <hr class="border-y-neutral-dark-grayish-blue" />
+
+          <a href="" class="group">
+            <article class="flex flex-col gap-1">
+              <h3 class="text-lg font-semibold md:max-lg:text-xl">Is VC Funding Drying Up?</h3>
+              <p class="text-sm font-medium text-neutral-grayish-blue leading-6 md:max-lg:text-lg">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </a>
+        </div>
       </section>
 
-      <section class="font-body flex flex-col gap-8">
-        <article class="flex flex-row">
-          <img class="w-24 pr-4" src="./assets/images/image-retro-pcs.jpg"
-            alt="image d'un ordinateur et de consoles des années 90" />
-          <div class="flex flex-col gap-1 pr-12">
-            <h2 class="font-sans text-3xl font-semibold text-neutral-grayish-blue tracking-wider">01</h2>
-            <h3 class="text-neutral-very-dark-blue text-paragraph font-extrabold">Reviving Retro PCs</h3>
-            <p class="text-sm font-thin">What happens when old PCs are given modern upgrades?</p>
+      <section class="flex flex-col gap-8">
+        <article class="flex flex-row gap-4">
+          <div class="w-[33%]">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="image d'un ordinateur et de consoles des années 90" />
+          </div>
+          <div class="flex flex-col gap-2 w-[67%] sm:max-lg:justify-center sm:max-lg:gap-4">
+            <h2 class="text-4xl font-semibold text-neutral-grayish-blue">
+              01
+            </h2>
+            <h3 class="text-neutral-very-dark-blue font-extrabold md:max-lg:text-xl">
+              Reviving Retro PCs
+            </h3>
+            <p class="leading-7 font-medium text-neutral-dark-grayish-blue md:max-lg:text-lg">
+              What happens when old PCs are given modern upgrades?
+            </p>
           </div>
         </article>
 
-        <article class="flex flex-row">
-          <img class="w-24 pr-4" src="./assets/images/image-top-laptops.jpg"
-            alt="image très zoomée sur un clavier noir et retro-éclairé rouge" />
-          <div class="flex flex-col gap-1 pr-12">
-            <h2 class="font-sans text-3xl font-semibold text-neutral-grayish-blue tracking-wider">02</h2>
-            <h3 class="text-neutral-very-dark-blue text-paragraph font-extrabold">Top 10 Laptops of 2022</h3>
-            <p class="text-sm font-thin">Our best picks for various needs and budgets.</p>
+        <article class="flex flex-row gap-4">
+          <div class="w-[33%]">
+            <img src="./assets/images/image-top-laptops.jpg"
+              alt="image très zoomée sur un clavier noir et retro-éclairé rouge" />
+          </div>
+          <div class="flex flex-col gap-2 w-[67%] sm:max-lg:justify-center sm:max-lg:gap-4">
+            <h2 class="text-4xl font-semibold text-neutral-grayish-blue md:max-lg:text-5xl">
+              02
+            </h2>
+            <h3 class="text-neutral-very-dark-blue font-extrabold md:max-lg:text-xl">
+              Top 10 Laptops of 2022
+            </h3>
+            <p class="leading-7 font-medium text-neutral-dark-grayish-blue md:max-lg:text-lg">
+              Our best picks for various needs and budgets.
+            </p>
           </div>
         </article>
 
-        <article class="flex flex-row">
-          <img class="w-24 pr-4" src="./assets/images/image-gaming-growth.jpg"
-            alt="image d'une main faisant sauter une manette blanche de playstation4">
-          <div class="flex flex-col gap-1 pr-14">
-            <h2 class="font-sans text-3xl font-semibold text-neutral-grayish-blue tracking-wider">03</h2>
-            <h3 class="text-neutral-very-dark-blue text-paragraph font-extrabold">The Growth of Gaming</h3>
-            <p class="text-sm font-thin">How the pandemic has sparked fresh opportunities.</p>
+        <article class="flex flex-row gap-4">
+          <div class="w-[33%]">
+            <img src="./assets/images/image-gaming-growth.jpg"
+              alt="image d'une main faisant sauter une manette blanche de playstation4" />
+          </div>
+          <div class="flex flex-col gap-2 w-[67%] sm:max-lg:justify-center sm:max-lg:gap-4">
+            <h2 class="text-4xl font-semibold text-neutral-grayish-blue md:max-lg:text-5xl">
+              03
+            </h2>
+            <h3 class="text-neutral-very-dark-blue font-extrabold md:max-lg:text-xl">
+              The Growth of Gaming
+            </h3>
+            <p class="leading-7 font-medium text-neutral-dark-grayish-blue md:max-lg:text-lg">
+              How the pandemic has sparked fresh opportunities.
+            </p>
           </div>
         </article>
       </section>

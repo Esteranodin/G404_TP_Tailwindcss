@@ -1,0 +1,19 @@
+
+
+responsive = faire tous les break points de tailwind 
+// ne faire des personnaliser que si il y a un truc qui ne va pas entre deux tailles
+(customizing screen)
+
+entre 640 et 768 beaucoup de marges sur x
+
+entre 768 et 1024
+etape avec titre a gauche et paragrpahe a droite
+
+sur md: flex-row par exemple
+
+bien regarder les souris actives
+
+
+
+class group
+
