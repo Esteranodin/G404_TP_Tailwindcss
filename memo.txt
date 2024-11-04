@@ -1,5 +1,4 @@
 
-
 responsive = faire tous les break points de tailwind 
 // ne faire des personnaliser que si il y a un truc qui ne va pas entre deux tailles
 (customizing screen)
@@ -16,4 +15,15 @@ bien regarder les souris actives
 
 
 class group
+
+h2 01
+au dessus 700 on change image lego
++ article numéroté en ligne x2 + 1
+==> flex wrap = aggrandit element en hauteur pour que tout rentre
+= revient a la ligne si plsu la place en largeur
+
+1280 version desktop on englobe dans section 
+= refactorise = on vérifie si rien n'est cassé
++ xl en flex et gap 
++ 3 article numéroté a la ligne
 
